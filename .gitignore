@@ -1,0 +1,29 @@
+# ============================================================================
+#  NOT FOR PUBLICATION
+#  Everything in this repo is served publicly at borhaneddinehamadou.github.io
+#  and is fetchable by URL even when no page links to it.
+# ============================================================================
+
+# Under double-blind review at ICSE 2027. Publishing a named PDF of it at a
+# guessable URL on the author's own site would break anonymity and could get
+# the submission desk-rejected. Do NOT un-ignore before acceptance.
+docs/papers/SA-TRP_ICSE.pdf
+
+# Private: job-search strategy, the reusable story pool, and internal notes
+# (including the ASE major-revision story). Not for employers to browse.
+docs/Hamadou_Borhaneddine_CoverLetter.tex
+
+# Reviewer-facing revision document from the ASE submission. Not public material.
+docs/ase26-paper443-major_revision.pdf
+
+# Third-party marketing PDF (Altea Energy) - not yours to republish.
+docs/cv_tips.pdf
+
+# Page-generation helpers, not part of the published site.
+_build/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+*.swp
+*~

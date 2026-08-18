@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Borhaneddine Hamadou</title>
+  <meta name="description" content="Research and engineering projects by Borhaneddine Hamadou: PWCC risk-informed test adequacy for autonomous systems (ASE 2026) and QoS prediction for autonomous vehicles in edge computing.">
+  <meta name="author" content="Borhaneddine Hamadou">
+  <meta name="keywords" content="Borhaneddine Hamadou, autonomous vehicles, scenario-based testing, safety validation, verification and validation, Bayesian networks, machine learning, PhD, CEA, Paris-Saclay, ISSRE, ASE, research scientist, industrial R&D">
+  <link rel="canonical" href="https://borhaneddinehamadou.github.io/projects.html">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Borhaneddine Hamadou">
+  <meta property="og:description" content="Research and engineering projects by Borhaneddine Hamadou: PWCC risk-informed test adequacy for autonomous systems (ASE 2026) and QoS prediction for autonomous vehicles in edge computing.">
+  <meta property="og:image" content="https://borhaneddinehamadou.github.io/img/web/borhaneddine.jpg">
+  <meta property="og:url" content="https://borhaneddinehamadou.github.io/projects.html">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav" id="top">
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="brand">Borhaneddine Hamadou</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" title="Menu"><span class="nav-burger"></span><span class="sr-only">Menu</span></label>
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="activities.html">Awards &amp; Activities</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="layout">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <img src="img/web/borhaneddine.jpg" alt="Portrait of Borhaneddine Hamadou" class="avatar" width="180" height="180">
+    <h1 class="name">Borhaneddine Hamadou</h1>
+    <p class="tagline">PhD Researcher<br>Safety Testing of Autonomous Systems</p>
+    <p class="affil">CEA List · Université Paris-Saclay</p>
+    <p class="location">📍 Île-de-France, France</p>
+    <ul class="side-links">
+      <li><a href="mailto:borhaneddine.hamadou@cea.fr"><img src="img/web/gmail.png" alt="" class="icon" width="18" height="18"> Email</a></li>
+      <li><a href="https://github.com/BorhaneddineHamadou" target="_blank" rel="noopener"><img src="img/web/github.png" alt="" class="icon" width="18" height="18"> GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/borhaneddine-hamadou-48272431b/" target="_blank" rel="noopener"><img src="img/web/linkedin.png" alt="" class="icon" width="18" height="18"> LinkedIn</a></li>
+      <li><a href="docs/Hamadou_Borhaneddine_CV.pdf" target="_blank" rel="noopener"><img src="img/web/cv.svg" alt="" class="icon" width="18" height="18"> CV (PDF)</a></li>
+    </ul>
+    <div class="availability">
+      <strong>Open to opportunities</strong>
+      <span>Research Engineer &middot; Simulation &amp; Validation &middot; Industrial R&amp;D &middot; France &amp; Europe</span>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project featured wide">
+        <div class="project-media">
+          <a href="img/PWCCfigure.png" target="_blank" rel="noopener">
+            <img src="img/web/pwcc.jpg" alt="PWCC overview: the problem (a suite can score 100% coverage and still hide 95.8% of failures), the idea (measure coverage in probability mass), and the evidence (zero false-adequacy verdicts across three driving datasets)" width="1600" height="900">
+          </a>
+        </div>
+        <div class="project-body">
+          <h3>PWCC — Risk-Informed Test Adequacy for Autonomous Systems</h3>
+          <p class="project-meta">PhD research &middot; CEA List, Universit&eacute; Paris-Saclay &middot; ASE 2026 &middot; 2025&ndash;2026</p>
+          <p>
+            An open-source tool and replication package that answers <em>"have we tested enough?"</em> for autonomous systems.
+            PWCC learns a Bayesian-network model of the operating domain from fleet data, weights combinatorial coverage by how
+            likely each condition is on the road, and stops testing once the untested share of expected operation falls below a
+            threshold you set &mdash; instead of counting every combination as equally important.
+          </p>
+          <ul class="project-highlights">
+            <li>Command-line tool that runs on your own scenario data and exits non-zero when testing is inadequate &mdash; drops into CI as a stopping gate</li>
+            <li>Pre-built Docker image, 31 smoke tests, pinned dependencies &mdash; archived on Zenodo under CC BY 4.0</li>
+          </ul>
+          <p class="pub-links">
+            <a href="https://doi.org/10.5281/zenodo.21739211" target="_blank" rel="noopener">[Code &amp; data]</a>
+            <a href="docs/papers/PWCC_ASE.pdf" target="_blank" rel="noopener">[PDF]</a>
+          </p>
+          <details class="video-details">
+            <summary>▶ Watch the 40-second walkthrough (one test campaign, three metrics, three verdicts)</summary>
+            <video controls preload="none" width="100%" poster="img/web/pwcc.jpg">
+              <source src="videos/pwcc_2.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="videos/pwcc_2.mp4">Download the video</a>.
+            </video>
+          </details>
+        </div>
+      </article>
+
+      <article class="project featured">
+        <div class="project-media">
+          <img src="img/web/laas.jpg" alt="Borhaneddine Hamadou at LAAS-CNRS, Toulouse" loading="lazy" width="750" height="989">
+        </div>
+        <div class="project-body">
+          <h3>QoS Prediction for Autonomous Vehicles in Edge Computing</h3>
+          <p class="project-meta">AI Research Internship · LAAS-CNRS, Toulouse · 2022–2023</p>
+          <p>
+            End-to-end machine-learning pipeline that predicts Quality-of-Service degradation for autonomous vehicles
+            operating in dynamic edge-computing environments — enabling proactive intervention before latency incidents occur.
+            Delivered as a versatile real-time prediction API integrated into a larger AV ecosystem.
+          </p>
+          <ul class="project-highlights">
+            <li>Time-series forecasting models for QoS degradation with high accuracy</li>
+            <li>Production-style REST API for real-time predictions</li>
+            <li>Full engineering thesis (PFE) defended at ESI Algiers</li>
+          </ul>
+          <p class="pub-links">
+            <a href="https://github.com/BorhaneddineHamadou/QoS_Pred_API_V2" target="_blank" rel="noopener">[Code]</a>
+            <a href="docs/pfe.pdf" target="_blank" rel="noopener">[Report]</a>
+            <a href="docs/Présentation Soutenance.pdf" target="_blank" rel="noopener">[Slides]</a>
+          </p>
+          <details class="video-details">
+            <summary>▶ Watch the project video (problem &amp; solution walkthrough)</summary>
+            <video controls preload="none" width="100%">
+              <source src="videos/PFE_video.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="videos/PFE_video.mp4">Download the video</a>.
+            </video>
+          </details>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project card">
+          <h3><img src="img/web/github.png" alt="" class="icon" width="18" height="18"> More on GitHub</h3>
+          <p class="project-meta">Parallel computing · Metaheuristics · ML</p>
+          <p>CUDA/OpenMP parallel Gauss-Jordan solver, hybrid metaheuristics for the unbounded knapsack problem, and more.</p>
+          <p class="pub-links"><a href="https://github.com/BorhaneddineHamadou" target="_blank" rel="noopener">[GitHub Profile]</a></p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Borhaneddine Hamadou</p>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>
