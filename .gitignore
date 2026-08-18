@@ -19,6 +19,14 @@ docs/ase26-paper443-major_revision.pdf
 # Third-party marketing PDF (Altea Energy) - not yours to republish.
 docs/cv_tips.pdf
 
+# CV LaTeX source. The compiled PDF is published and linked from every page;
+# the source is not needed publicly.
+docs/Hamadou_Borhaneddine_CV.tex
+
+# DRIVE hackathon dashboard. Shows teammates' photos and thesis topics, and is
+# no longer linked from any page. Also removed from sitemap.xml.
+speedboat/
+
 # Page-generation helpers, not part of the published site.
 _build/
 
