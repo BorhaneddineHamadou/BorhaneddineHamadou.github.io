@@ -38,3 +38,7 @@ Thumbs.db
 
 # Local maintenance notes, kept out of the public repo.
 NOTES.md
+
+# Unredacted ISTQB certificate (carries a passport number).
+# The published version is certifications/ISTQB_Training_redacted.pdf
+docs/ISTQB_Training.pdf
