@@ -42,3 +42,7 @@ NOTES.md
 # Unredacted ISTQB certificate (carries a passport number).
 # The published version is certifications/ISTQB_Training_redacted.pdf
 docs/ISTQB_Training.pdf
+
+# Under double-blind review at FSE 2027. Same reason as SA-TRP: a named PDF at
+# a guessable URL on the author's own site breaks anonymity.
+docs/papers/fse2027-paper1117.pdf
